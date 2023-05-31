@@ -1,0 +1,16 @@
+.ac-heading{
+    font-size: 30px;
+}
+.row1{
+    margin-top: 1rem;    
+}
+.card1{
+    background-color: white;
+    padding: 12px;
+}
+.addbutton{
+    width: 50%;
+    height: 7vh;
+    border: none;
+    
+}

@@ -1,0 +1,169 @@
+
+
+
+
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+.card2{
+    width: 550px;
+    height: 70vh;
+}
+.account-pages {
+    min-height: 100vh;
+    padding: 60px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 20px;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+.justify-content-center {
+    -webkit-box-pack: center!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+
+
+
+input[type="text"],
+input[type="password"],
+button,
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  padding: 0.25rem;
+  border-radius: 0.rem;
+  
+}
+
+/* .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  padding: 1rem 0.5rem;
+} */
+
+/* .section {
+    width: 100%;
+    max-width: 500px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+} */
+
+/* .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+} */
+
+/* a, a:visited {
+    color: #0f0f0f;
+     
+}*/
+
+/* input[type="text"],
+input[type="password"],
+button,
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 11px;
+  padding: 0.25rem;
+  border-radius: 0.rem;
+  
+} */
+
+/* label{
+    font-size: 18px;
+    font-weight:10px
+} */
+/* button {
+  margin-top: .95rem;
+  padding: 0.5rem;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 2px #999;
+  
+} */
+
+/* .button:active {
+    background-color: #3f6840;
+    box-shadow: 0 5px #5f5d5d;
+    transform: translateY(4px);
+  } */
+
+.instructions {
+    font-size: 0.5rem;
+    border-radius: 0.5rem;
+    background: #0729208a;
+    color: #fff;
+    padding: 0.15rem;
+    position: relative;
+    bottom: -5px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+    color: black;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.errMsg {
+    border-radius: 20px;
+    background-color: rgb(177, 162, 162);
+    color: rgb(179, 28, 28);
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+
