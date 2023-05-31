@@ -24,9 +24,9 @@ const Review = () => {
           },
         }
       );
-      setInvoiceDetails(invoiceResponse);
+      setInvoiceDetails(invoiceResponse.data.message[0]);
 
-      
+
     }catch(e){
       console.log(e);
     }
@@ -41,7 +41,7 @@ const Review = () => {
           },
         }
       );
-      setVendorDetails(vendorResponse)
+      setVendorDetails(vendorResponse.data.message[0])
       console.log("vendorResponse :"+ vendorResponse);
       console.log(vendorDetails);
       console.log("vendor: "+ vendorDetails)
@@ -59,7 +59,7 @@ const Review = () => {
           },
         }
       );
-      setPaymentDetails(paymentResponse)
+      setPaymentDetails(paymentResponse.data.message[0])
     }catch(e){
       console.log(e);
     }
@@ -130,7 +130,7 @@ const Review = () => {
                       className="form-control"
                       name="vendor_name"
                       autoComplete="off"
-                      // value={vendorDetails.vendor_name}
+                      value={vendorDetails.vendor_name}
                       readOnly
                     />
                   </div>
@@ -141,7 +141,7 @@ const Review = () => {
                       className="form-control"
                       name="vendor_GSTno"
                       autoComplete="off"
-                      // value={vendorDetails.vendor_GSTno}
+                      value={vendorDetails.vendor_GSTno}
                       readOnly
                     />
                   </div>
@@ -152,7 +152,7 @@ const Review = () => {
                       className="form-control"
                       name="vendor_mobileno"
                       autoComplete="off"
-                      // value={item.vendor_mobileno}
+                      value={vendorDetails.vendor_mobileno}
                       readOnly
                     />
                   </div>
@@ -166,7 +166,7 @@ const Review = () => {
                       className="form-control"
                       name="vendor"
                       autoComplete="off"
-                      // value={vendorDetails.vendor}
+                      value={vendorDetails.vendor}
                       readOnly
                     />
                   </div>
@@ -177,7 +177,7 @@ const Review = () => {
                       className="form-control"
                       name="account"
                       autoComplete="off"
-                      // value={vendorDetails.account}
+                      value={vendorDetails.account}
                       readOnly
                     />
                   </div>
@@ -188,7 +188,7 @@ const Review = () => {
                       className="form-control"
                       name="tds_tax"
                       autoComplete="off"
-                      // value={item.tds_tax}
+                      value={vendorDetails.tds_tax}
                       readOnly
                     />
                   </div>
@@ -202,7 +202,7 @@ const Review = () => {
                       className="form-control"
                       name="vendor_PanCard"
                       autoComplete="off"
-                      // value={item.vendor_PanCard}
+                      value={vendorDetails.vendor_PanCard}
                       readOnly
                     />
                   </div>
@@ -213,7 +213,7 @@ const Review = () => {
                       className="form-control"
                       name="vendor_address"
                       autoComplete="off"
-                      // value={item.vendor_address}
+                      value={vendorDetails.vendor_address}
                       readOnly
                     />
                   </div>
@@ -224,7 +224,7 @@ const Review = () => {
                       className="form-control"
                       name="vendor_TDS"
                       autoComplete="off"
-                      // value={item.vendor_TDS}
+                      value={vendorDetails.vendor_TDS}
                       readOnly
                     />
                   </div>
@@ -238,7 +238,7 @@ const Review = () => {
                       className="form-control"
                       name="invoice_detail"
                       autoComplete="off"
-                      // value={item.invoice_detail}
+                      value={vendorDetails.invoice_detail}
                       readOnly
                     />
                   </div>
@@ -249,7 +249,7 @@ const Review = () => {
                       className="form-control"
                       name="amount"
                       autoComplete="off"
-                      // value={item.amount}
+                      value={paymentDetails.amount}
                       readOnly
                     />
                   </div>
@@ -260,7 +260,7 @@ const Review = () => {
                       className="form-control"
                       name="payment_id"
                       autoComplete="off"
-                      // value={item.payment_id}
+                      value={paymentDetails.payment_id}
                       readOnly
                     />
                   </div>
@@ -274,7 +274,7 @@ const Review = () => {
                       className="form-control"
                       name="invoice_no"
                       autoComplete="off"
-                      // value={item.invoice_no}
+                      value={invoiceDetails.invoice_no}
                       readOnly
                     />
                   </div>
@@ -285,7 +285,7 @@ const Review = () => {
                       className="form-control"
                       name="deduction"
                       autoComplete="off"
-                      // value={item.deduction}
+                      value={invoiceDetails.deduction}
                       readOnly
                     />
                   </div>
@@ -296,7 +296,7 @@ const Review = () => {
                       className="form-control"
                       name="invoice_date"
                       autoComplete="off"
-                      // value={item.invoice_date}
+                      value={invoiceDetails.invoice_date}
                       readOnly
                     />
                   </div>
@@ -310,7 +310,7 @@ const Review = () => {
                       className="form-control"
                       name="invoice_amount"
                       autoComplete="off"
-                      // value={item.invoice_amount}
+                      value={invoiceDetails.invoice_amount}
                       readOnly
                     />
                   </div>
